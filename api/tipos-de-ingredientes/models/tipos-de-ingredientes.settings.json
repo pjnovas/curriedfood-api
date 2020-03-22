@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "tipos_de_ingredientes",
+  "info": {
+    "name": "Tipos de ingredientes"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Nombre": {
+      "type": "string",
+      "required": true
+    },
+    "Divisible": {
+      "type": "boolean",
+      "default": true,
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "ingredientes",
+  "info": {
+    "name": "Comidas_Ingredientes"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Cantidad": {
+      "type": "decimal",
+      "required": true
+    },
+    "tipo": {
+      "model": "tipos-de-ingredientes"
+    },
+    "comida": {
+      "model": "comidas",
+      "via": "ingredientes"
+    },
+    "Unidad": {
+      "type": "enumeration",
+      "enum": [
+        "gramos",
+        "cm3",
+        "litros",
+        "entero",
+        "decimal",
+        "partes",
+        "tazas",
+        "cucharadas"
+      ],
+      "default": "entero",
+      "required": true
+    }
+  }
+}

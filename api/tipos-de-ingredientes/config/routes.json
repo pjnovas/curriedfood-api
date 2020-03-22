@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tipos-de-ingredientes",
+      "handler": "tipos-de-ingredientes.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tipos-de-ingredientes/count",
+      "handler": "tipos-de-ingredientes.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tipos-de-ingredientes/:id",
+      "handler": "tipos-de-ingredientes.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tipos-de-ingredientes",
+      "handler": "tipos-de-ingredientes.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tipos-de-ingredientes/:id",
+      "handler": "tipos-de-ingredientes.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tipos-de-ingredientes/:id",
+      "handler": "tipos-de-ingredientes.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

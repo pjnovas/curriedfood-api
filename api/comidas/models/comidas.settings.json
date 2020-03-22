@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "comidas",
+  "info": {
+    "name": "Comidas"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Titulo": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "Receta": {
+      "type": "richtext"
+    },
+    "Foto": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "Porciones": {
+      "type": "integer"
+    },
+    "ingredientes": {
+      "via": "comida",
+      "collection": "ingredientes"
+    }
+  }
+}
