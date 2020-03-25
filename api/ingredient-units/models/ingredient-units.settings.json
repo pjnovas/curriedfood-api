@@ -1,23 +1,18 @@
 {
   "kind": "collectionType",
   "connection": "default",
-  "collectionName": "tipos_de_ingredientes",
+  "collectionName": "units",
   "info": {
-    "name": "Tipos de ingredientes"
+    "name": "Units"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "Nombre": {
+    "code": {
       "type": "string",
       "required": true
-    },
-    "Divisible": {
-      "type": "boolean",
-      "default": true,
-      "required": false
     }
   }
 }

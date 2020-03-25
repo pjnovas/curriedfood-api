@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/comidas",
-      "handler": "comidas.find",
+      "path": "/dishes",
+      "handler": "dishes.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/comidas/count",
-      "handler": "comidas.count",
+      "path": "/dishes/count",
+      "handler": "dishes.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/comidas/:id",
-      "handler": "comidas.findOne",
+      "path": "/dishes/:id",
+      "handler": "dishes.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/comidas",
-      "handler": "comidas.create",
+      "path": "/dishes",
+      "handler": "dishes.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/comidas/:id",
-      "handler": "comidas.update",
+      "path": "/dishes/:id",
+      "handler": "dishes.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/comidas/:id",
-      "handler": "comidas.delete",
+      "path": "/dishes/:id",
+      "handler": "dishes.delete",
       "config": {
         "policies": []
       }

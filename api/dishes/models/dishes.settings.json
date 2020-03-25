@@ -1,35 +1,45 @@
 {
   "kind": "collectionType",
   "connection": "default",
-  "collectionName": "comidas",
+  "collectionName": "dishes",
   "info": {
-    "name": "Comidas"
+    "name": "Dishes"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "Titulo": {
+    "title": {
       "type": "string",
       "required": true,
       "unique": false
     },
-    "Receta": {
+    "recipe": {
       "type": "richtext"
     },
-    "Foto": {
+    "photo": {
       "model": "file",
       "via": "related",
       "plugin": "upload",
       "required": false
     },
-    "Porciones": {
+    "servings": {
       "type": "integer"
     },
-    "ingredientes": {
-      "via": "comida",
-      "collection": "ingredientes"
+    "ingredients": {
+      "type": "component",
+      "repeatable": true,
+      "component": "products.product-item"
+    },
+    "author": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "dishes"
+    },
+    "duration": {
+      "type": "integer",
+      "min": 0
     }
   }
 }

@@ -1,0 +1,21 @@
+{
+  "connection": "default",
+  "collectionName": "components_products_product_items",
+  "info": {
+    "name": "Product Item",
+    "icon": "apple-alt"
+  },
+  "options": {},
+  "attributes": {
+    "quantity": {
+      "type": "decimal",
+      "required": true
+    },
+    "product": {
+      "model": "products"
+    },
+    "unit": {
+      "model": "ingredient-units"
+    }
+  }
+}
