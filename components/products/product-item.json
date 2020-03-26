@@ -16,6 +16,12 @@
     },
     "unit": {
       "model": "ingredient-units"
+    },
+    "alt_quantity": {
+      "type": "decimal"
+    },
+    "alt_unit": {
+      "model": "ingredient-units"
     }
   }
 }

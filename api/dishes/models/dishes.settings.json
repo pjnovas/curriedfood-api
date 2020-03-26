@@ -27,19 +27,31 @@
     "servings": {
       "type": "integer"
     },
-    "ingredients": {
-      "type": "component",
-      "repeatable": true,
-      "component": "products.product-item"
+    "duration": {
+      "type": "integer",
+      "min": 0
+    },
+    "tags": {
+      "type": "string"
+    },
+    "level": {
+      "type": "integer",
+      "default": 1,
+      "min": 1,
+      "max": 5
+    },
+    "meal": {
+      "type": "string"
     },
     "author": {
       "plugin": "users-permissions",
       "model": "user",
       "via": "dishes"
     },
-    "duration": {
-      "type": "integer",
-      "min": 0
+    "ingredients": {
+      "type": "component",
+      "repeatable": true,
+      "component": "products.product-item"
     }
   }
 }
