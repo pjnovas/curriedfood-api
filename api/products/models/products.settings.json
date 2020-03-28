@@ -27,7 +27,6 @@
       "type": "string"
     },
     "place": {
-      "via": "products",
       "model": "places"
     }
   }

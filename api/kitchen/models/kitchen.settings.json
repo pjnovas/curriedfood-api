@@ -16,7 +16,6 @@
       "component": "products.product-item"
     },
     "place": {
-      "via": "kitchen",
       "model": "places"
     }
   }

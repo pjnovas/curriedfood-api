@@ -53,9 +53,8 @@
       "repeatable": true,
       "component": "products.product-item"
     },
-    "places": {
-      "via": "dishes",
-      "collection": "places"
+    "place": {
+      "model": "places"
     }
   }
 }
