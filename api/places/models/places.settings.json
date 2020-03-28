@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "places",
+  "info": {
+    "name": "places"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "members": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "places",
+      "dominant": true
+    },
+    "kitchen": {
+      "model": "kitchen",
+      "via": "place"
+    },
+    "shopping_list": {
+      "model": "shopping-list",
+      "via": "place"
+    },
+    "products": {
+      "collection": "products",
+      "via": "place"
+    },
+    "dishes": {
+      "collection": "dishes",
+      "via": "places",
+      "dominant": true
+    }
+  }
+}

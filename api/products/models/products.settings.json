@@ -19,6 +19,16 @@
       "type": "boolean",
       "default": true,
       "required": false
+    },
+    "shop_tags": {
+      "type": "string"
+    },
+    "kitchen_tags": {
+      "type": "string"
+    },
+    "place": {
+      "via": "products",
+      "model": "places"
     }
   }
 }

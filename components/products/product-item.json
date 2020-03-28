@@ -22,6 +22,12 @@
     },
     "alt_unit": {
       "model": "ingredient-units"
+    },
+    "valid_thru": {
+      "type": "date"
+    },
+    "checked": {
+      "type": "boolean"
     }
   }
 }

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/kitchens",
+      "handler": "kitchen.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/kitchens/count",
+      "handler": "kitchen.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/kitchens/:id",
+      "handler": "kitchen.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/kitchens",
+      "handler": "kitchen.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/kitchens/:id",
+      "handler": "kitchen.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/kitchens/:id",
+      "handler": "kitchen.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

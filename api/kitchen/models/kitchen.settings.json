@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "kitchens",
+  "info": {
+    "name": "kitchen"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "groceries": {
+      "type": "component",
+      "repeatable": true,
+      "component": "products.product-item"
+    },
+    "place": {
+      "via": "kitchen",
+      "model": "places"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "shopping_lists",
+  "info": {
+    "name": "shopping_list"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "groceries": {
+      "type": "component",
+      "repeatable": true,
+      "component": "products.product-item"
+    },
+    "place": {
+      "via": "shopping_list",
+      "model": "places"
+    }
+  }
+}
