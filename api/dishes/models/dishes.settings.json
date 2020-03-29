@@ -45,8 +45,7 @@
     },
     "author": {
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "dishes"
+      "model": "user"
     },
     "ingredients": {
       "type": "component",

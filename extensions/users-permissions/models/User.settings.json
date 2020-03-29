@@ -54,10 +54,6 @@
       "plugin": "users-permissions",
       "configurable": false
     },
-    "dishes": {
-      "via": "author",
-      "collection": "dishes"
-    },
     "places": {
       "via": "members",
       "collection": "places"
