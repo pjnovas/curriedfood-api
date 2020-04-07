@@ -14,20 +14,31 @@
     "product": {
       "model": "products"
     },
-    "unit": {
-      "model": "ingredient-units"
-    },
     "alt_quantity": {
       "type": "decimal"
-    },
-    "alt_unit": {
-      "model": "ingredient-units"
     },
     "valid_thru": {
       "type": "date"
     },
     "checked": {
       "type": "boolean"
+    },
+    "alt_unit": {
+      "type": "enumeration",
+      "enum": [
+        "un",
+        "cu",
+        "gr",
+        "lt",
+        "cc",
+        "tz",
+        "ml",
+        "di",
+        "ca",
+        "cn",
+        "pi",
+        "xy"
+      ]
     }
   }
 }

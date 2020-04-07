@@ -517,7 +517,8 @@
       "Products": {
         "required": [
           "id",
-          "name"
+          "name",
+          "unit"
         ],
         "properties": {
           "id": {
@@ -555,12 +556,31 @@
                 }
               }
             }
+          },
+          "unit": {
+            "type": "string",
+            "default": "gr",
+            "enum": [
+              "un",
+              "cu",
+              "gr",
+              "lt",
+              "cc",
+              "tz",
+              "ml",
+              "di",
+              "ca",
+              "cn",
+              "pi",
+              "xy"
+            ]
           }
         }
       },
       "NewProducts": {
         "required": [
-          "name"
+          "name",
+          "unit"
         ],
         "properties": {
           "name": {
@@ -578,6 +598,24 @@
           },
           "place": {
             "type": "string"
+          },
+          "unit": {
+            "type": "string",
+            "default": "gr",
+            "enum": [
+              "un",
+              "cu",
+              "gr",
+              "lt",
+              "cc",
+              "tz",
+              "ml",
+              "di",
+              "ca",
+              "cn",
+              "pi",
+              "xy"
+            ]
           }
         }
       }

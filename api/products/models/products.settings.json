@@ -28,6 +28,25 @@
     },
     "place": {
       "model": "places"
+    },
+    "unit": {
+      "type": "enumeration",
+      "enum": [
+        "un",
+        "cu",
+        "gr",
+        "lt",
+        "cc",
+        "tz",
+        "ml",
+        "di",
+        "ca",
+        "cn",
+        "pi",
+        "xy"
+      ],
+      "default": "gr",
+      "required": true
     }
   }
 }

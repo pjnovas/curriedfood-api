@@ -553,7 +553,8 @@
                 "product": {
                   "required": [
                     "id",
-                    "name"
+                    "name",
+                    "unit"
                   ],
                   "properties": {
                     "id": {
@@ -573,19 +574,8 @@
                     },
                     "place": {
                       "type": "string"
-                    }
-                  }
-                },
-                "unit": {
-                  "required": [
-                    "id",
-                    "code"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
                     },
-                    "code": {
+                    "unit": {
                       "type": "string"
                     }
                   }
@@ -593,25 +583,28 @@
                 "alt_quantity": {
                   "type": "number"
                 },
-                "alt_unit": {
-                  "required": [
-                    "id",
-                    "code"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "code": {
-                      "type": "string"
-                    }
-                  }
-                },
                 "valid_thru": {
                   "type": "string"
                 },
                 "checked": {
                   "type": "boolean"
+                },
+                "alt_unit": {
+                  "type": "string",
+                  "enum": [
+                    "un",
+                    "cu",
+                    "gr",
+                    "lt",
+                    "cc",
+                    "tz",
+                    "ml",
+                    "di",
+                    "ca",
+                    "cn",
+                    "pi",
+                    "xy"
+                  ]
                 }
               }
             }
@@ -658,7 +651,8 @@
                 "product": {
                   "required": [
                     "id",
-                    "name"
+                    "name",
+                    "unit"
                   ],
                   "properties": {
                     "id": {
@@ -678,19 +672,8 @@
                     },
                     "place": {
                       "type": "string"
-                    }
-                  }
-                },
-                "unit": {
-                  "required": [
-                    "id",
-                    "code"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
                     },
-                    "code": {
+                    "unit": {
                       "type": "string"
                     }
                   }
@@ -698,25 +681,28 @@
                 "alt_quantity": {
                   "type": "number"
                 },
-                "alt_unit": {
-                  "required": [
-                    "id",
-                    "code"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "code": {
-                      "type": "string"
-                    }
-                  }
-                },
                 "valid_thru": {
                   "type": "string"
                 },
                 "checked": {
                   "type": "boolean"
+                },
+                "alt_unit": {
+                  "type": "string",
+                  "enum": [
+                    "un",
+                    "cu",
+                    "gr",
+                    "lt",
+                    "cc",
+                    "tz",
+                    "ml",
+                    "di",
+                    "ca",
+                    "cn",
+                    "pi",
+                    "xy"
+                  ]
                 }
               }
             }
